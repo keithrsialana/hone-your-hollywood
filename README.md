@@ -1,7 +1,7 @@
-# hone-your-hollywood
-A small web application to let the user add their own list of movies that they would like to watch or re-watch, and have the app randomly pick between the movies in the list
+# Hone Your Hollywood Web Application
+A small web application to let the user add their own list of movies that they would like to watch or re-watch, and have the app randomly pick between the movies in the list.
 
-## User Story #1:
+## Overall User Story #1:
 AS A user
 I WANT to input my favorite movies
 SO THAT they can get saved into local storage
@@ -20,5 +20,3 @@ SO THAT the application would navigate back to the landing page
 AS A user
 I WANT to click on a button within the picked movie page
 SO THAT the application would pick another movie without navigating to the landing page
-
-
