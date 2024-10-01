@@ -85,6 +85,9 @@ button:hover,
 	color: black;
     border: 1px solid var(--secondary-darker);
 }
+#horror {
+	text-align: center;
+}
 footer {
     display: flex;
     align-items: center;
