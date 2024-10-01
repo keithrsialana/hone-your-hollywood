@@ -13,6 +13,7 @@ h5 {
 	--secondary-darker: #b69919;
 	--tertiary: #ffffff;
 	--tertiary-darker: #bebebe;
+	
 }
 header {
 	background-color: var(--primary);
@@ -87,6 +88,22 @@ button:hover,
 }
 #horror {
 	text-align: center;
+}
+#movies-saved-centering {
+	/* border: 1px solid black; */
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+#savedMovies {
+	border-radius: 5px;
+	
+}
+#savedMovies, #btnPickMovie {
+	width: 65%;
 }
 footer {
     display: flex;
