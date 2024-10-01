@@ -1,4 +1,8 @@
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 :root {
@@ -10,40 +14,50 @@ h1,h2,h3,h4,h5 {
 	--tertiary: #628395;
 	--tertiary-darker: #4b6674;
 }
-
 header {
 	background-color: var(--primary);
 	color: var(--secondary);
-	display:inline-flex;
-    overflow: hidden;
-    width: 100%;
-    flex-wrap: wrap;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    height: max-content;
 }
 header > span {
-	width: 49%;
 	display: flex;
-    border: 1px solid white;
-    height: 100%;
-    flex-basis: 100%;
-    flex-shrink: 1;
-    flex-grow: 1;
+	/* border: 1px solid white; */
+	flex-basis: 100%;
+	flex-shrink: 1;
+	flex-grow: 1;
+    min-height: max-content;
+}
+#logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+header > span:nth-child(1) {
+    justify-content: center;
 }
 header > span:nth-child(2) {
-	justify-content: right;
-    align-items: center;
+    justify-content: right;
+	align-items: right;
 }
 header > span > p {
-	font-weight: bolder;
+    font-weight: bolder;
 	font-size: 240%;
 }
 header a {
-	text-decoration: none;
+    text-decoration: none;
 	color: var(--secondary);
 	text-align: center;
-	/* padding: 4% 1%; */
 	font-weight: bolder;
 	font-size: 1.5em;
-    height: 100%;
+    padding: 0 1em;
+    margin: 0px 0px;
+    align-content: center;
 }
 header a:hover {
 	background-color: var(--primary-lighter);
@@ -70,6 +84,10 @@ button:hover,
 	color: black;
 }
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
 	background-color: var(--primary);
 	color: white;
 	text-align: center;
