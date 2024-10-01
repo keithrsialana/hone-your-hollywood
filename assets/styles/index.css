@@ -1,0 +1,31 @@
+main * {
+	display: block;
+}
+main > #intro {
+	text-align: center;
+}
+main > #intro > p {
+	width: 70%;
+	margin: auto;
+}
+#intro {
+	margin-bottom: 3em;
+}
+form :nth-child(1) {
+	text-align: right;
+}
+.form-section {
+	display: inline-block;
+	width: 49%;
+}
+.form-section > input,
+.form-section > div {
+	width: 70%;
+}
+.form-section > input,
+.form-section > div > * {
+	text-align: center;
+}
+textarea {
+	height: 11em;
+}

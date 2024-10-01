@@ -1,97 +1,68 @@
-h1, h2, h3, h4, h5 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+h1,h2,h3,h4,h5 {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-:root{
-    --primary:#B8001F;
-    --primary-darker: #92041c;
-    --primary-lighter: #dc1032;
-    --secondary: #D5B522;
-    --secondary-darker: #B69919;
-    --tertiary: #628395;
-    --tertiary-darker:#4B6674;
+:root {
+	--primary: #b8001f;
+	--primary-darker: #92041c;
+	--primary-lighter: #dc1032;
+	--secondary: #d5b522;
+	--secondary-darker: #b69919;
+	--tertiary: #628395;
+	--tertiary-darker: #4b6674;
 }
 
 header {
-    background-color: var(--primary);
-    color: var(--secondary);
-    display: flex;
-    flex-wrap: wrap;
+	background-color: var(--primary);
+	color: var(--secondary);
+	display: flex;
+	flex-wrap: wrap;
 }
 header > span {
-    width: 49%;
-    display: flex;
+	width: 49%;
+	display: flex;
 }
-header > span:nth-child(2){
-    justify-content: right;
+header > span:nth-child(2) {
+	justify-content: right;
 }
 header > span > p {
-font-weight: bolder;
-font-size: 3em;
+	font-weight: bolder;
+	font-size: 3em;
 }
-
 header a {
-    text-decoration: none;
-    color: var(--secondary);
-    /* border: 1px solid white; */
-    text-align: center;
-    padding: 1em .5em;
-    font-weight: bolder;
-    font-size: 1.5em;
+	text-decoration: none;
+	color: var(--secondary);
+	text-align: center;
+	padding: 50% 1%;
+
+	font-weight: bolder;
+	font-size: 1.5em;
 }
-header a:hover{
-    background-color: var(--primary-lighter);
+header a:hover {
+	background-color: var(--primary-lighter);
 }
 body {
-    background-color: var(--tertiary-darker);
-    height: 100vh;
+	background-color: var(--tertiary-darker);
+	height: 100vh;
 }
 main {
-    width: 94%;
-    margin: 3em auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+	width: 94%;
+	margin: 3em auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
-main * {
-    display: block;
+button,
+.our-button {
+	background-color: var(--secondary);
+	color: black;
 }
-main > #intro {
-    text-align: center;
-}
-main > #intro > p {
-    width: 70%;
-    margin: auto;
-}
-#intro  {
-    margin-bottom: 3em;
-}
-form :nth-child(1){
-    text-align: right;
-}
-.form-section {
-    display: inline-block;
-    width: 49%;
-}
-.form-section > input, .form-section > div {
-    width: 70%;
-}
-.form-section > input, .form-section > div > *{
-    text-align: center;
-}
-textarea {
-    height: 11em;
-}
-button, .our-button {
-    background-color: var(--secondary);
-    color: black;
-}
-button:hover, .our-button:hover {
-    background-color: var(--secondary-darker);
-    color: black;
+button:hover,
+.our-button:hover {
+	background-color: var(--secondary-darker);
+	color: black;
 }
 footer {
-    background-color: var(--primary);
-    color: white;
-    text-align: center;
-    
+	background-color: var(--primary);
+	color: white;
+	text-align: center;
 }
