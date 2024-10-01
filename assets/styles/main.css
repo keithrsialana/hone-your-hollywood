@@ -11,8 +11,8 @@ h5 {
 	--primary-lighter: #dc1032;
 	--secondary: #d5b522;
 	--secondary-darker: #b69919;
-	--tertiary: #628395;
-	--tertiary-darker: #4b6674;
+	--tertiary: #ffffff;
+	--tertiary-darker: #bebebe;
 }
 header {
 	background-color: var(--primary);
