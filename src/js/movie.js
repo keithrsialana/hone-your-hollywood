@@ -10,4 +10,4 @@ const redirect = function(url) {
 }   
 backButton.addEventListener('click', function(){
     redirect(redirectURL);
-})
+});
