@@ -1,6 +1,12 @@
 #chosenMovie {
-    height: 30vh;
+    height: 41.5vh;
+    font-size: 65px;
+    font-weight: bolder;
+    text-align: center;
 }
 header {
 	background-image: url(https://media.istockphoto.com/id/504096800/photo/empty-comfortable-red-seats-with-numbers-in-cinema.webp?s=612x612&w=is&k=20&c=56GrJObtPoye9OHwnXU9qFTrUlL4jGJ9Q4oJ1kZbcnU=);
+}
+h2 {
+   font-family: cursive;
 }
