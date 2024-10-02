@@ -1,5 +1,5 @@
 const backButton = document.querySelector('#btnBack')
-let redirectURL = 'index.html'
+let redirectURL = './index.html'
 
 const redirect = function(url) {
     redirect = url;
