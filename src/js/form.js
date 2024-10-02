@@ -62,5 +62,11 @@ pickButton.addEventListener("click", function (event) {
 	}
 });
 
+function fillTextArea(){
+    const movies = getMovies();
+    movies.forEach(element => {
+        taMovies.value += `${element.name}\n`;
+    });
+}
 
-
+fillTextArea();
