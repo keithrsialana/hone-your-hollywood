@@ -10,6 +10,7 @@ function saveMovieToStorage(movieObj) {
 	localStorage.setItem("movies", JSON.stringify(movieList));
 }
 const redirect = function (url) {
-	redirectURL = url;
 	location.assign(url);
 };
+
+

@@ -54,10 +54,13 @@ genres.forEach((element) => {
 pickButton.addEventListener("click", function (event) {
     event.preventDefault();
 
-	if (taMovies.textContent == "" || taMovies.textContent == null) {
+	if (taMovies.value == "" || taMovies.value == null) {
 		sendError("You have not added any movies!");
 		return;
 	} else {
 		redirect("moviePicker.html");
 	}
 });
+
+
+
