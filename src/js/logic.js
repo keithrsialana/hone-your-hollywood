@@ -1,11 +1,15 @@
-function getMovies(){
-    let data = JSON.parse(localStorage.getItem('movies'));
-    if (!data)
-        return null;
-    return data
+function getMovies() {
+	let data = JSON.parse(localStorage.getItem("movies"));
+	if (!data) return null;
+	return data;
 }
-function saveMovieToStorage(movieObj){
-    let movieList = getMovies();
-    movieList.push(movieObj);
-    localStorage.setItem('movies',movieList);
+function saveMovieToStorage(movieObj) {
+	let movieList = getMovies();
+	if (movieList == null) movieList = [];
+	movieList.push(movieObj);
+	localStorage.setItem("movies", JSON.stringify(movieList));
 }
+const redirect = function (url) {
+	redirectURL = url;
+	location.assign(url);
+};
