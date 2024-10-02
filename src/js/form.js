@@ -11,7 +11,7 @@ function sendError(errorString) {
 function enterKey(event){
 	if (event.code == "Enter") {
         event.preventDefault();
-        
+
 		const name = movieInput.value;
 		let dropDown = document.getElementById("genres");
 		const genre = dropDown.textContent;
