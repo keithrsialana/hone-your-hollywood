@@ -2,6 +2,7 @@ const myModal = document.getElementById("myModal");
 const myInput = document.getElementById("myInput");
 const backButton = document.querySelector("#btnBack");
 let redirectURL = "./index.html";
+const newButton = document.getElementById('btnPickNew')
 
 backButton.addEventListener("click", function () {
 	redirect(redirectURL);
@@ -18,4 +19,8 @@ const moviePicker = function(movies) {
     yourMovie.textContent = (`Your movie is: ${pickedMovie.name}`);
 }
 moviePicker(myMovies);
+
+newButton.addEventListener('click', function() {
+    moviePicker(myMovies);
+});
 
