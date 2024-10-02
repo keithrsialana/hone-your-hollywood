@@ -1,22 +1,13 @@
+/* Elements */
 main * {
 	display: block;
-}
-main > #intro {
-	text-align: center;
 }
 main > #intro > p {
 	width: 70%;
 	margin: auto;
 }
-#intro {
-	margin-bottom: 3em;
-}
 form :nth-child(1) {
 	text-align: right;
-}
-.form-section {
-	display: inline-block;
-	width: 49%;
 }
 .form-section > input,
 .form-section > div {
@@ -32,4 +23,42 @@ textarea {
 }
 header {
 	background-image: url(https://media.istockphoto.com/id/504096800/photo/empty-comfortable-red-seats-with-numbers-in-cinema.webp?s=612x612&w=is&k=20&c=56GrJObtPoye9OHwnXU9qFTrUlL4jGJ9Q4oJ1kZbcnU=);
+}
+li:hover {
+	background-color: var(--primary-lighter);
+	color: white;
+	cursor: context-menu;
+}
+/* Classes */
+.form-section {
+	display: inline-block;
+	width: 49%;
+}
+.selected {
+	background-color: var(--primary-darker);
+	color: white;
+}
+/* IDs */
+#intro {
+	margin-bottom: 3em;
+}
+main > #intro {
+	text-align: center;
+}
+#horror {
+	text-align: center;
+}
+#movies-saved-centering {
+	/* border: 1px solid black; */
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+#savedMovies {
+	border-radius: 5px;
+	
+}
+#savedMovies, #btnPickMovie {
+	width: 65%;
 }

@@ -33,11 +33,36 @@
 		</div>
 
 		<div id="btns" class="d-grid gap-2 col-6 mx-auto">
-			<button id="btnBack" class="btn btn-primary our-button" type="button">Back</button>
+			<button type="btnGoBack" class="btn btn-primary our-button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="">
+				Back
+			  </button>
 			<button id="btnPickNew" class="btn btn-primary our-button" type="button">
 				Pick a new movie!
 			</button>
 		</div>
+
+	<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h1 class="modal-title fs-5" id="exampleModalLabel">Are you ready?</h1>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+		  Are you sure you want to go back?
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, not yet</button>
+		  <button type="button" class="btn btn-primary" id="btnBack">Yes, I want to go back</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
 	</main>
 	<hr />
 	<footer>
