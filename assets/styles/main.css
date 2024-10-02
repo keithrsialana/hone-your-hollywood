@@ -61,7 +61,7 @@ header a {
     align-content: center;
 }
 header a:hover {
-	background-color: var(--primary-lighter);
+	background-color: rgba(220,16,50, 55%);
 }
 body {
 	background-color: var(--tertiary-darker);
