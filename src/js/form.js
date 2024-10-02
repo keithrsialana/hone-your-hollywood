@@ -11,7 +11,7 @@ function sendError(errorString) {
 function enterKey(event){
 	if (event.code == "Enter") {
         event.preventDefault();
-        
+
 		const name = movieInput.value;
 		let dropDown = document.getElementById("genres");
 		const genre = dropDown.textContent;
@@ -54,7 +54,7 @@ genres.forEach((element) => {
 pickButton.addEventListener("click", function (event) {
     event.preventDefault();
 
-	if (taMovies.textContent == "" || taMovies.textContent == null) {
+	if (taMovies.value == "" || taMovies.value == null) {
 		sendError("You have not added any movies!");
 		return;
 	} else {
