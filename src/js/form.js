@@ -61,3 +61,12 @@ pickButton.addEventListener("click", function (event) {
 		redirect("moviePicker.html");
 	}
 });
+
+function fillTextArea(){
+    const movies = getMovies();
+    movies.forEach(element => {
+        taMovies.value += `${element.name}\n`;
+    });
+}
+
+fillTextArea();
