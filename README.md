@@ -17,7 +17,7 @@ Initially, when you open Hone Your Hollywood, you are presented with our home pa
 - [License](#license)
 
 ## Deployed Application
-https://github.com/keithrsialana/hone-your-hollywood
+https://keithrsialana.github.io/hone-your-hollywood/
 
 ## Installation
 ### Requirements
