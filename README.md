@@ -6,7 +6,7 @@ A small web application to let the user add their own list of movies that they w
 
 AS A user
 I WANT to input my favorite movies
-SO THAT they can get saved into local storage
+SO THAT they can get saved to my local storage.
 
 ## User Story #2:
 
