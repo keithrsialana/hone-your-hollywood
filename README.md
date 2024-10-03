@@ -6,6 +6,19 @@ A small web application to let the user add their own list of movies that they w
 
 Initially, when you open Hone Your Hollywood, you are presented with our home page. Our home page includes a form where you will select the genre and title of your movie and enter the information to your saved list. Your saved movies will be displayed right beneath the form; and under that a button that will take you to a new page displaying your movie. On that page you can see your chosen movie, or you could generate a new movie. You may also choose go back to our home page using the back button or the Home button in the navigation bar. Next to that Home button is an About Us button that will direct you to a page that tells you a little bit about the developers bringing this creation to you today.
 
+## Table of Contents
+- [Deployed Application](#deployed-application)
+- [Installation](#installation)
+- [Functionalities](#functionalities)
+- [Future Plans](#future-plans)
+- [User Stories](#overall-user-story)
+- [Screenshots](#screenshots)
+- [Credits](#credits)
+- [License](#license)
+
+## Deployed Application
+https://github.com/keithrsialana/hone-your-hollywood
+
 ## Installation
 ### Requirements
  - An IDE
@@ -58,3 +71,11 @@ SO THAT the application would pick another movie without navigating to the landi
 ![HYH Picked Movie Page](./assets/images/movie-picker-page.PNG "HYH Picked Movie Page")
 ### About Us Page
 ![HYH About Us Page](./assets/images/about-us-page.PNG "About Us Page")
+
+# Credits
+- River Stephenson
+- Justin Silber
+- Keith Sialana
+
+# License
+MIT License
