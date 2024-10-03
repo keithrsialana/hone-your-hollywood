@@ -1,9 +1,13 @@
 #chosenMovie {
-    display: flex;
-    height: 41.5vh;
     font-size: 65px;
     font-weight: bolder;
     text-align: center;
+}
+main {
+    align-items: center;
+}
+#pickedMovie{
+    display: block;
 }
 header {
 	background-image: url(https://media.istockphoto.com/id/504096800/photo/empty-comfortable-red-seats-with-numbers-in-cinema.webp?s=612x612&w=is&k=20&c=56GrJObtPoye9OHwnXU9qFTrUlL4jGJ9Q4oJ1kZbcnU=);
@@ -12,7 +16,11 @@ p {
    font-family: cursive;
 }
 #action {
-    max-width: 27vw;
-    max-height: 30vh;
+    max-width: 50%;
     justify-content: start;
+}
+@media screen and (max-width: 768px){
+    #action{
+        max-width: 60%;
+    }
 }
