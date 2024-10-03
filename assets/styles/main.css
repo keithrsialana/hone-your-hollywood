@@ -37,7 +37,7 @@ header > span {
 #logo {
     position: absolute;
     left: 10px;
-	max-height: 15%;
+	max-height: 10.5%;
 	margin: 5px auto;
 	background-color: rgba(73, 0, 0, 0.747);
 	border: 8px solid rgba(73, 0, 0, 0.747);
