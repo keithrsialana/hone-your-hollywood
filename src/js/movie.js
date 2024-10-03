@@ -12,10 +12,13 @@ backButton.addEventListener("click", function () {
 const myMovies = getMovies();
 
 const moviePicker = function(movies) {
+
+    // randomize from length of list
     const rndNumber = Math.floor(Math.random() * movies.length);
     const pickedMovie = movies[rndNumber];
     const yourMovie = document.getElementById('pickedMovie');
 
+    // display picked movie
     yourMovie.textContent = (`Your movie is: ${pickedMovie.name}`);
 }
 moviePicker(myMovies);
