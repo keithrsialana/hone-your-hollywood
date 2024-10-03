@@ -36,8 +36,11 @@ header > span {
 }
 #logo {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 10px;
+	max-height: 15%;
+	margin: 5px auto;
+	background-color: rgba(73, 0, 0, 0.747);
+	border: 8px solid rgba(73, 0, 0, 0.747);
 }
 header > span:nth-child(1) {
     justify-content: center;
@@ -98,4 +101,27 @@ footer {
 #error{
 	font-weight: bold;
 	color:red;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+	header span p {
+		justify-content: center;
+		display: flex;
+		font-size: 170%;
+	}
+	header > span {
+		align-items: center;
+		/* border: 1px solid white; */
+		flex-direction: column;
+	}
+	header > span > a {
+		background-color: var(--primary-darker);
+		min-width: 100%;
+	}
+	#logo{
+		display: block;
+		position: relative;
+		max-width: 30%;
+	}
 }

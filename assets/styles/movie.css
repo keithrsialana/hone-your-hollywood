@@ -16,3 +16,6 @@ p {
     max-height: 30vh;
     justify-content: start;
 }
+@media screen and (max-width: 768px){
+    
+}

@@ -5,6 +5,7 @@ let genreList = document.getElementById("genreList");
 let genres = document.querySelectorAll("li");
 
 function sendError(errorString) {
+	// update error message depending on argument string passed
 	document.getElementById("error").innerHTML = errorString;
 }
 
@@ -15,6 +16,8 @@ function enterKey(event){
 		const name = movieInput.value;
 		let dropDown = document.getElementById("genres");
 		const genre = dropDown.textContent;
+
+		// input validation
 		if (name === "" || name == null) {
 			sendError("You have not entered a movie name!");
 			return;
@@ -23,10 +26,14 @@ function enterKey(event){
 			sendError("You have not selected a genre!");
 			return;
 		}
+
+		// create movie object
 		const movieObj = {
 			name: name,
 			genre: genre,
 		};
+
+		// save to local storage
 		movieInput.value = "";
 		saveMovieToStorage(movieObj);
 		taMovies.value += `${movieObj.name}\n`;
@@ -54,6 +61,7 @@ genres.forEach((element) => {
 pickButton.addEventListener("click", function (event) {
     event.preventDefault();
 
+	// submit validation
 	if (taMovies.value == "" || taMovies.value == null) {
 		sendError("You have not added any movies!");
 		return;
@@ -63,6 +71,8 @@ pickButton.addEventListener("click", function (event) {
 });
 
 function fillTextArea(){
+
+	// autofill list on load
     const movies = getMovies();
     movies.forEach(element => {
         taMovies.value += `${element.name}\n`;

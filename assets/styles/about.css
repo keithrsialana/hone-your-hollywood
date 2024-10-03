@@ -1,14 +1,24 @@
 main {
-    display: flex;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
 img {
-    max-height: 25vh;
-    max-width: 15vw;
+	border: 5px dotted var(--tertiary);
+	max-width: 15vw;
 }
 header {
 	background-image: url(https://media.istockphoto.com/id/504096800/photo/empty-comfortable-red-seats-with-numbers-in-cinema.webp?s=612x612&w=is&k=20&c=56GrJObtPoye9OHwnXU9qFTrUlL4jGJ9Q4oJ1kZbcnU=);
 }
- #about {
-    align-items: start;
-    max-width: 35vw;
+/* #about {
+	align-items: start;
+	max-width: 35vw;
+} */
+@media screen and (max-width: 768px) {
+    img {
+        max-width: 80%;
+    }
+    p {
+        max-width: 86%;
+    }
 }
